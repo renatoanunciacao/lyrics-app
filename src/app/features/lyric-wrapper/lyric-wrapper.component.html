@@ -1,0 +1,7 @@
+<section class="lyricWrapper">
+    <app-lyric-list *ngIf="songList.length > 0 && songLetter === ''" [songList]="songList"
+    (lyricSelectedEvent)="handleLyricSelectedEvent($event)"></app-lyric-list>
+    <app-lyric-letter *ngIf="songLetter !== ''" [lyric]="songLetter"
+    (goBackEvent)="handleBackButton()"></app-lyric-letter>
+    <div *ngIf="songList.length === 0 && songLetter === ''">Pesquise uma música</div>
+ </section>

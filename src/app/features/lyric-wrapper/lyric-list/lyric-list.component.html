@@ -1,0 +1,7 @@
+<ul class="lyricList">
+    <li *ngFor="let song of songList">
+    <button class="-songname" (click)="handleMusicSelect(song)">
+    {{song.title}}
+    </button>
+    </li>
+    </ul>

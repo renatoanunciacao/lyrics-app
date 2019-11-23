@@ -1,0 +1,4 @@
+<app-header></app-header>
+<app-search (searchWordEvent)="callLyricWrapper($event)"></app-search>
+<app-lyric-wrapper [searchWord]="searchWord" class="-expandwrapper"></app-lyric-wrapper>
+<app-footer></app-footer>

@@ -1,0 +1,18 @@
+@import '../../../../assets/theme/variables';
+.lyricList {
+.-songname {
+background: none;
+border: none;
+border-bottom: 1px solid $p-color;
+display: block;
+outline: none;
+padding: 16px 0;
+text-align: left;
+width: 100%;
+}
+li:last-of-type {
+.-songname {
+border-bottom: transparent;
+}
+}
+}
